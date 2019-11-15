@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Container, Card, Button, Col, Row } from 'react-materialize'
+import API from './api.js'
 
  class App extends Component {
    constructor(props) {
      super(props);
      this.state = {
        name: '',
-       phone: '',
+       email: '',
        photo: ''
      }
 
@@ -49,7 +50,8 @@ import { Container, Card, Button, Col, Row } from 'react-materialize'
   }
 
   handleSubmit = () => {
-
+    const params = {'user': { name: this.state.name, email: this.state.email, photo: this.state.photo }}
+    const request = API.post(`/users`, params)
   }
 
   clear = () => {
@@ -60,8 +62,8 @@ import { Container, Card, Button, Col, Row } from 'react-materialize'
     let canvas = document.getElementById('canvas')
     let context = canvas.getContext('2d')
     context.clearRect(0, 0, canvas.width, canvas.height)
-    
-    this.setState({ name: '', phone: '', photo: '' })
+
+    this.setState({ name: '', email: '', photo: '' })
   }
 
   render() {
@@ -71,10 +73,10 @@ import { Container, Card, Button, Col, Row } from 'react-materialize'
           <Row>
             <Col s={12} m={5}>
               <Col s={12} m={12} >
-                <input name="name" type="text" placeholder="Nome" onChange={this.handleChange} />
+                <input name="name" type="text" placeholder="Nome" value={this.state.name} onChange={this.handleChange} />
               </Col>
               <Col s={12} m={12} >
-                <input name="phone" type="number" placeholder="Telefone" onChange={this.handleChange} />
+                <input name="email" type="text" placeholder="E-mail" value={this.state.email} onChange={this.handleChange} />
               </Col>
               <Col s={12} m={4} style={{ textAlign: 'center', marginTop: '3px', marginBottom: '3px' }}>
                 <Button style={{width: '100%'}} onClick={this.habilitarFoto}> Habilitar foto </Button>

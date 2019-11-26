@@ -12,12 +12,12 @@ const Home = () => (
       <Row style={{ textAlign: 'center' }}>
         <Col s={12} m={12}>
           <Col s={12} m={6}>
-            <a href="/register" >
+            <a href="/mediaregisterclient/register" >
               <Button style={{ width: '100%' }} > Registrar </Button>
             </a>
           </Col>
           <Col s={12} m={6}>
-            <a href="/members">
+            <a href="/mediaregisterclient/members">
               <Button style={{ width: '100%' }} > Ver Membros </Button>
             </a>
           </Col>

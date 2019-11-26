@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/mediaregisterclient/static/js/main.4aa4af73.chunk.js",
-    "main.js.map": "/mediaregisterclient/static/js/main.4aa4af73.chunk.js.map",
+    "main.js": "/mediaregisterclient/static/js/main.3080d2a9.chunk.js",
+    "main.js.map": "/mediaregisterclient/static/js/main.3080d2a9.chunk.js.map",
     "runtime-main.js": "/mediaregisterclient/static/js/runtime-main.0c158ebe.js",
     "runtime-main.js.map": "/mediaregisterclient/static/js/runtime-main.0c158ebe.js.map",
-    "static/js/2.f98cb6f9.chunk.js": "/mediaregisterclient/static/js/2.f98cb6f9.chunk.js",
-    "static/js/2.f98cb6f9.chunk.js.map": "/mediaregisterclient/static/js/2.f98cb6f9.chunk.js.map",
+    "static/js/2.86d3e1d4.chunk.js": "/mediaregisterclient/static/js/2.86d3e1d4.chunk.js",
+    "static/js/2.86d3e1d4.chunk.js.map": "/mediaregisterclient/static/js/2.86d3e1d4.chunk.js.map",
     "index.html": "/mediaregisterclient/index.html",
-    "precache-manifest.938024d326a0653df95a3ae5db4abedc.js": "/mediaregisterclient/precache-manifest.938024d326a0653df95a3ae5db4abedc.js",
+    "precache-manifest.762fdf308567100d1607d6f2c5c72cbc.js": "/mediaregisterclient/precache-manifest.762fdf308567100d1607d6f2c5c72cbc.js",
     "service-worker.js": "/mediaregisterclient/service-worker.js"
   },
   "entrypoints": [
     "static/js/runtime-main.0c158ebe.js",
-    "static/js/2.f98cb6f9.chunk.js",
-    "static/js/main.4aa4af73.chunk.js"
+    "static/js/2.86d3e1d4.chunk.js",
+    "static/js/main.3080d2a9.chunk.js"
   ]
 }

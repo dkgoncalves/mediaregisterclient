@@ -6,8 +6,8 @@ import ListMembers from './ListMembers'
 
 const Routes = () => (
   <Router>
-    <Route exact path="/mediaregisterclient/" component={Home} />
-    <Route path="/register" component={Register} />
+    <Route exact path="/mediaregisterclient" render={() => <Redirect to="/"  component={Home}/>} />
+    <Route path="/mediaregisterclient/register" component={Register} />
     <Route path="/members" component={ListMembers} />
   </Router>
 )

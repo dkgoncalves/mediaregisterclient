@@ -2,8 +2,10 @@
   "name": "register",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/dkgoncalves/mediaregisterclient.git",
   "dependencies": {
     "axios": "^0.19.0",
+    "gh-pages": "^2.1.1",
     "materialize-css": "^1.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -16,7 +18,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

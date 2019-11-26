@@ -6,7 +6,7 @@ import ListMembers from './ListMembers'
 
 const Routes = () => (
   <Router>
-    <Route exact path="dkgoncalves.github.io/mediaregisterclient/" render={() => <Redirect to="/"  component={Home}/>} />
+    <Route exact path="/mediaregisterclient/" render={() => <Redirect to="/"  component={Home}/>} />
     <Route path="/mediaregisterclient/register" component={Register} />
     <Route path="/members" component={ListMembers} />
   </Router>
